@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+		
+		canvas { position: absolute; }
+		#gameScreen {
+			border: 1px solid black;
+			z-index: 2;
+		}
+		#backGround{
+		border: 1px solid black;
+			z-index: 1;
+		}
+		
+		
+		img {
+		display: none;
+		}
+		</style>
+	</head>
+	<body>
+	
+	<!--https://www.youtube.com/watch?v=3EMxBkqC4z0&feature=emb_logo-->
+	
+	<img id="img_plane" src="assets/plane.png">
+	<img id="img_asteroid" src="assets/asteroid.png">
+	<img id="img_asteroid_hit" src="assets/asteroidhit.png">
+	<img id="img_background" src="assets/background.png">
+	
+	<canvas id="gameScreen" width="800" height="600"></canvas>
+	<canvas id="backGround" width="800" height="600"></canvas>
+	
+	<script src="src/index.js"></script>	
+	</body>
+</html>
